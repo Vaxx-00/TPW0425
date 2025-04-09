@@ -1,0 +1,86 @@
+/* -------------------------------------------------------------------------- */
+/*                                 PERCENTUALE                                */
+/* -------------------------------------------------------------------------- */
+
+/* La misura in percentuale è relativa al genitore dell'elemento */
+.percentuale {
+   background-color: #FFCC00; 
+   width:50%;
+}
+
+/* Questo sarà largo il 50% del suo genitore */
+.figlio-di-percentuale {
+    background-color: cadetblue;
+    width:50%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                  VIEWPORT                                  */
+/* -------------------------------------------------------------------------- */
+/* VIEWPORT HEIGHT | Relativa all'altezza del viewport */
+.full-height {
+    background-color: rgb(227, 158, 255);
+    /* Altezza in vh, da 1 a 100 dove 100 è il massimo */
+    height: 100vh; 
+}
+
+/* VIEWPORT WIDTH | Relativa alla larghezza del viewport */
+.full-width {
+    background-color: #80eb14;
+    /* larghezza in vw, da 1 a 100 dove 100 è il massimo */
+    width: 100vw;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                     REM                                    */
+/* -------------------------------------------------------------------------- */
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+   
+}
+
+h1 span {
+    background-color: #ffccdd;
+}
+
+/*posso anche usare misure più piccole, tipo 0.5rem, oppure decimali tipo 2.75rem */
+
+p {
+    margin-top: 0;
+}
+
+.subtitle {
+    font-size: 0.5em; /*la metà del font-size del genitore */
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                            DISPOSIZIONE IMMAGINI                           */
+/* -------------------------------------------------------------------------- */
+
+.image-centered {
+    /*1. forzo l'immagine come elemento blocco (di default è inline)*/
+    display: block;
+    /* 2. applico i margini automatici (funzionano solo sugli elementi blocco) */
+    margin:auto;
+    /*nota: il margine automatico funziona solo se l'elemento ha una dimensione specifica. In questo caso funziona perché l'immagine ha già una sua dimensione intrinseca */
+}
+
+.image-left {
+    float:left;
+    margin-right:1rem;
+}
+
+
+.image-right {
+    float:right;
+    margin-left: 1rem;
+}
+
+.clear {
+    clear:both; /*lascia vuoto lo spazio attorno */
+    /*oppure: clear-left lascia libero a sinistra | clear:right  lascia libero a destra */
+}
