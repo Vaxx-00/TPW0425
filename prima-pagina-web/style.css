@@ -1,0 +1,67 @@
+
+
+body {
+
+    background-color: #091c33;
+    color: #d7fffe;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width:1000px;
+    margin:auto;
+    
+    /*Se serve un margine interno:*/
+    padding: 16px;
+}
+
+h1 {
+    font-size: 48px; /*dimensione carattere per h1 */
+}
+
+h2 {
+    font-size: 32px;
+}
+
+a {
+    color:#f7ca00;
+}
+
+ul a {
+    /*tutti i tag <a> dentro i tag <ul>*/
+    font-weight: bold;
+    /*font-weight: spessore del testo*/
+}
+
+/* per selezionare una classe uso .nomeclasse*/
+/*qui agisco su tutti gli elementi con class="intro"*/
+
+.intro {
+
+    font-size: 20px;
+
+}
+
+.film-info {
+    font-size: 20px;
+    font-style: italic; /*corsivo*/
+    font-weight: normal;
+
+   /*creo un bordo sul lato superiore */
+
+   border-top:1px solid #f7ca00;
+   /*bordo: SPESSORE | TIPO | COLORE */
+
+}
+
+.regista {
+    font-weight: bold;
+}
+
+
+
+img {
+    width: 800px;
+}
+
+    
