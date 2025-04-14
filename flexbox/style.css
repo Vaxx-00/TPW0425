@@ -1,0 +1,120 @@
+.parent {
+    /*bordo: dimensione | stile | colore*/
+    border:1px solid black;
+    font-size: 3rem;
+
+    /*forzo altezza per dimostrare allineamento verticale*/
+    height: 50vh;
+
+    /*applico proprietà flex*/
+    display: flex;
+    
+    /* -------------------------------------------------------------------------- */
+    /*                    ALLINEARE SUL MAIN-AXIS (orizzontale)                   */
+    /* -------------------------------------------------------------------------- */
+   
+    /*default*/
+    justify-content:flex-start;  
+
+    /*a destra*/
+    justify-content: flex-end;
+
+    /*al centro*/
+    justify-content: center;
+
+    /*distribuiti in larghezza*/
+    justify-content: space-between;
+
+    /*distribuisci uniformemente lo spazio*/
+    justify-content: space-evenly;
+    
+    /*applica spazi uguali attorno agli elementi*/
+    justify-content: space-around;
+
+    /* -------------------------------------------------------------------------- */
+    /*                    ALLINEARE SUL CROSS-AXIS (verticale)                    */
+    /* -------------------------------------------------------------------------- */
+
+    /*default: non serve dichiararlo se voglio che si allunghino */
+    align-items: stretch;
+
+    /*in alto*/
+    align-items: flex-start;
+
+    /*in basso*/
+    align-items: flex-end;
+
+    /*al centro*/
+    align-items: center;
+
+}
+
+.child {
+    background-color:#82ee16;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   GALLERY                                  */
+/* -------------------------------------------------------------------------- */
+
+.gallery {
+    display: flex;
+    /*per mandare a capo se finisce lo spazio*/
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    /*per metterne solo 4 su una singola riga*/
+    width: 25%;
+}
+
+.gallery-item img {
+    /*rendo fluide le immagini*/
+    max-width: 100%;
+    /*max-width fa in modo che l'immagine si adatti (rimpicciolendosi) al suo contenitore */
+    /*se l'immagine è leggermente più piccola e voglio "stretcharla" allora uso width:100%*/
+}
+
+/* -------------------------------------------------------------------------- */
+/*                         TESTO E IMMAGINE AFFIANCATI                        */
+/* -------------------------------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    /*centro verticalmente gli elementi*/
+    align-items: center;
+}
+
+.text {
+    width: 66.666666%;
+}
+
+.image {
+    width: 33.3333%;
+}
+
+.image img {
+    /*gli elementi IMG dentro la classe .image */
+    /*rendo fluida l'immagine. Posso anche farlo a livello di tag globale con selettore img */
+    max-width: 100%;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    MENU                                    */
+/* -------------------------------------------------------------------------- */
+
+.menu { 
+
+    /*eliminiamo i puntini dalla lista*/
+    list-style-type: none;
+    
+    /*elimino i margini e i padding di default della lista*/
+    margin: 0;
+    padding: 0;
+    /*applico display-flex a UL che è il genitore degli LI*/
+    display: flex;
+
+    /*imposto uno spazio tra gli elementi con GAP*/
+    gap: 1rem;
+
+}
