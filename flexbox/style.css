@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+}
+
+
 .parent {
     /*bordo: dimensione | stile | colore*/
     border:1px solid black;

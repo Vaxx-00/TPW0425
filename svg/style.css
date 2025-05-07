@@ -1,0 +1,6 @@
+.svg-image svg {
+
+    fill:#FFCC00; /*riempimento colore del SVG */
+    /*per il bordo:*/
+    stroke: #990000;
+}
