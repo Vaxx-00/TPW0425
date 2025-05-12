@@ -23,10 +23,28 @@ img {
     height: auto;
 }
 
+a {
+    color: #119108;
+}
+
 .container {
     width: 94%;
     margin: auto;
 }
+
+/*HEADER E MENU */
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+
 
 /* -------------------------------------------------------------------------- */
 /*                                    HERO                                    */
@@ -54,6 +72,11 @@ img {
     font-size: 2rem;
 }
 
+/*allargo le immagini delle card perché alcune non riempiono lo spazio */
+ .card img {
+        width: 100%;
+        display: block;
+    }
 
 /* -------------------------------------------------------------------------- */
 /*                                    INFO                                    */
@@ -65,7 +88,7 @@ img {
     /* padding-top: 2rem;
     padding-bottom: 2rem; */
 
-    padding: 1rem 0; /*sopra+sotto | sinistra + destra */
+    padding: 2rem 0; /*sopra+sotto | sinistra + destra */
 }
 
 .info-icon {
@@ -74,7 +97,97 @@ img {
     text-shadow: 1px 1px #222;
 }
 
+.info-box {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    margin-bottom:1.5rem;
+}
 
+.info-text p, .info-text h3 {
+    margin: 0;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #091b07;
+    color:#8e8e8e;
+    /* padding-top:2rem;
+    padding-bottom: 2rem; */
+    padding: 2rem 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          MEDIA QUERIES PER DESKTOP                         */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (min-width:992px) {
+
+    .container {
+        width: 80%;
+    }
+
+    /*HEADER E MENU */
+
+    .header-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu ul {
+        display: flex;
+        gap: 2rem;
+    }
+
+
+    #hero {
+        background-image: url("./images/hero_d.jpg");
+    }
+
+    .news-wrapper {
+        display: flex;
+        gap: 1rem;
+    }
+
+    /*SINGOLA CARD*/
+    .card {
+        width: 33.333%;
+    }
+
+    .info-text {
+        padding: 2rem;
+    }
+
+    .info-icon {
+        font-size: 5rem;
+    }
+
+
+    /* SEZIONE INFO VERDE */
+
+    .info-wrapper {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .info-box {
+        /*invertendo gli assi di flexbox, cambio l'orientamento */
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*FOOTER */
+
+    .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+   
+
+
+
+}
 
 
 
