@@ -23,5 +23,60 @@ img {
     height: auto;
 }
 
+.container {
+    width: 94%;
+    margin: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    HERO                                    */
+/* -------------------------------------------------------------------------- */
+
+#hero {
+    height: 100vh;
+
+    background-image: url('./images/hero_m.jpg');
+
+    /*backround full screen*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    /*centro la scritta*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+.hero-text {
+    font-size: 2rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    INFO                                    */
+/* -------------------------------------------------------------------------- */
+
+#info {
+    background-color: #119108;
+    color:#FFF; /*posso accorpare cifre uguali in esadecimale*/
+    /* padding-top: 2rem;
+    padding-bottom: 2rem; */
+
+    padding: 1rem 0; /*sopra+sotto | sinistra + destra */
+}
+
+.info-icon {
+    font-size: 3rem;
+    color:#daff09;
+    text-shadow: 1px 1px #222;
+}
+
+
+
+
+
 
 

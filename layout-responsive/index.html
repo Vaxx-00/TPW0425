@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Responsive</title>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
     
@@ -19,7 +21,7 @@
         </section>
 
         <section id="news">
-        <div class="section-title">
+        <div class="section-title container">
             <h2>Leggi le ultime notizie</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia assumenda maiores aliquid molestiae odit molestias vitae! Porro placeat fugiat consequatur.</p>
         </div>
@@ -70,22 +72,37 @@
                 <div class="info-wrapper">                 
                     <!-- inizio info-box -->
                     <div class="info-box">
-                        <h3>Info box numero uno!</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur qui in deserunt laboriosam id ullam optio ad quae illum eligendi. Architecto aliquam accusantium eos.</p>
+                        <div class="info-icon">
+                            <i class="bi bi-airplane"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Aereo!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur qui in deserunt laboriosam id ullam optio ad quae illum eligendi. Architecto aliquam accusantium eos.</p>
+                        </div>
+                    </div>
+                    <!-- fine info-box -->
+
+                   <!-- inizio info-box -->
+                    <div class="info-box">
+                        <div class="info-icon">
+                            <i class="bi bi-backpack"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Zainetto!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur qui in deserunt laboriosam id ullam optio ad quae illum eligendi. Architecto aliquam accusantium eos.</p>
+                        </div>
                     </div>
                     <!-- fine info-box -->
 
                     <!-- inizio info-box -->
                     <div class="info-box">
-                        <h3>Info box numero due</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur qui in deserunt laboriosam id ullam optio ad quae illum eligendi. Architecto aliquam accusantium eos.</p>
-                    </div>
-                    <!-- fine info-box -->
-
-                    <!-- inizio info-box -->
-                    <div class="info-box">
-                        <h3>Info box numero tre!</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur qui in deserunt laboriosam id ullam optio ad quae illum eligendi. Architecto aliquam accusantium eos.</p>
+                        <div class="info-icon">
+                            <i class="bi bi-balloon-heart"></i>
+                        </div>
+                        <div class="info-text">
+                            <h3>Cuoricino!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur qui in deserunt laboriosam id ullam optio ad quae illum eligendi. Architecto aliquam accusantium eos.</p>
+                        </div>
                     </div>
                     <!-- fine info-box -->
 
@@ -95,15 +112,16 @@
         </section>
     </main>
     <footer>
-        <div class="footer-wrapper">
-            <div class="info-azienda">
-                Nome Azienda | P.I. 000000000<br>
-                Via Roma 12, 10100 Torino
-
-            </div>
-            <div class="contatti">
-                mail: info@rane.cracra<br>
-                tel: 0000000
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="info-azienda">
+                    Nome Azienda | P.I. 000000000<br>
+                    Via Roma 12, 10100 Torino
+                </div>
+                <div class="contatti">
+                    <i class="bi bi-envelope"></i> info@rane.cracra<br>
+                    <i class="bi bi-phone"></i> 0000000
+                </div>
             </div>
         </div>
     </footer>
