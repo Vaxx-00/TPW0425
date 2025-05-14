@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <header>
+    <header id="main-header">
         <!-- .container>.header-wrapper>(.logo+nav.menu) -->
          <div class="container">
             <div class="header-wrapper">
@@ -20,17 +20,23 @@
                         <li>
                             <a href="#">ABOUT</a>
                         </li>
+
                         <li>
                             <a href="#">PLANS</a>
                         </li>
+
                         <li>
                             <a href="#">CONTACT</a>
                         </li>
+
                         <li>
                             <a href="#">INFO</a>
                         </li>
                     </ul>
                 </nav>
+                <button id="menu-icon">
+                    <i class="bi bi-list"></i>
+                </button>
             </div>
          </div>
     </header>
@@ -147,6 +153,33 @@
                 </div>
             </div>
         </div>
+
+    <div class="fixed-element">HEY! SONO FISSO!</div>
+
     </footer>
+
+    <script>
+        //seleziona menu icon. Al click, lancia la funzione
+        document.querySelector('#menu-icon').addEventListener("click",addMenuClass);
+
+        function addMenuClass() {
+            var header = document.querySelector('#main-header');
+            console.log('CLICCATO!');
+
+            header.classList.toggle('is-mobile-open');
+            document.documentElement.classList.toggle('no-scroll');
+
+        }
+
+        // function addMenuClass() {
+        // var header = document.getElementById('mainHeader');
+        // var menuIcon = document.getElementById('menuIcon');
+
+        // //aggiungo o tolgo la classe in base al click
+        // header.classList.toggle('is-mobile-open');
+        // menuIcon.classList.toggle('open');
+
+    </script>
+
 </body>
 </html>
