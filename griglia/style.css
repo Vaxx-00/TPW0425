@@ -1,0 +1,19 @@
+.product-wrapper {
+    /*griglia prodotti */
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.col-3 .product-card {
+width:33.333%;
+}
+.col-2 .product-card {
+    width: 50%;
+}
+
+.product-card {
+    width:25%;
+}
+

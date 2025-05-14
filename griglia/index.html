@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <button id="col-3">3 colonne</button>
+    <button id="col-4">4 colonne</button>
+    <button id="col-2">2 colonne</button>
+    <div class="product-wrapper">
+        <div class="product-card">
+            CARD
+        </div>
+        <div class="product-card">
+            CARD
+        </div>
+        <div class="product-card">
+            CARD
+        </div>
+        <div class="product-card">
+            CARD
+        </div>
+        <div class="product-card">
+            CARD
+        </div>
+        <div class="product-card">
+            CARD
+        </div>
+        <div class="product-card">
+            CARD
+        </div>
+        <div class="product-card">
+            CARD
+        </div>
+        <div class="product-card">
+            CARD
+        </div>
+        <div class="product-card">
+            CARD
+        </div>
+        <div class="product-card">
+            CARD
+        </div>
+        <div class="product-card">
+            CARD
+        </div>
+    </div>
+
+    <script>
+       let col3 = document.querySelector('#col-3');
+       let col2 = document.querySelector('#col-2');
+       let col4 = document.querySelector('#col-4');
+       col2.addEventListener("click", set2Cols);
+
+       function set2Cols() {
+        console.log('setto 2 col');
+        document.querySelector('.product-wrapper').classList.toggle('col-2');
+       }
+    </script>
+</body>
+</html>
