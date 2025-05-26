@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <h1>Bootstrap!</h1>
+
+    
+    <h2>Griglia con colonne base tutte uguali</h2>
+    <!-- Per funzionare, la griglia di BS ha bisogno di un .container che contenga .row -->
+    <div class="container">
+
+        <!-- con la classe .row imposto una RIGA che contiene N colonne -->
+       <div class="row">
+            <div class="col">Colonna 1</div>
+            <div class="col">Colonna 2</div>
+            <div class="col">Colonna 3</div>
+       </div> 
+
+
+       <!-- Colonne con dimensioni definite -->
+
+       <div class="row">
+            <div class="col-4">Colonna da 4/12</div>
+            <div class="col-8">Colonna da 8/12</div>
+            <!-- <div class="col-6">Colonna 6/12</div> -->
+       </div>
+
+       <!-- Colonne responsive -->
+
+       <div class="row">
+            <!-- Quando uso le classi .col con i breakpoint responsive posso omettere le classi base tipo col-12 -->
+
+            <!-- Se scrivo col-lg ad esempio ottengo che sotto il breakpoint lg le colonne siano tutte in verticale, cioè col-12 -->
+
+            <div class="col-lg-4">Col. responsive</div>
+            <div class="col-lg-8">Col. responsive</div>
+       </div>
+
+       <div class="row">
+        <div class="col-md-6 col-lg-3">6/12 su md, 3/12 su lg</div>
+        <div class="col-md-6 col-lg-9">6/12 su md, 9/12 su lg</div>
+        <!-- <div class="col-md-6 col-lg-12">6/12 su md, 9/12 su lg</div> -->
+       </div>
+
+       <hr>
+       Colonne nidificate
+       <div class="row">
+        <div class="col-lg-4">colonna 4/12 da large in su</div>
+        <div class="col-lg-8">
+            8/12
+            <div class="row">
+                <div class="col-lg-6">6/12 nidificata</div>
+                <div class="col-lg-6">6/12 nidificata</div>
+            </div>
+        </div>
+       </div>
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  </body>
+</html>
