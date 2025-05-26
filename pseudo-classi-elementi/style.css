@@ -1,0 +1,51 @@
+body,html {
+    margin: 0;padding: 0;
+}
+
+.parent {
+    background:fuchsia;
+    border:1px solid black;
+}
+
+.parent::after { /*crea un elemento DOPO l'elemento con classe .parent */
+    content:'ciao';
+    display: block;
+}
+
+.parent::before {
+    content:'hey tu';
+    display: block;
+}
+
+
+#hero {
+    background-image: url('background.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    position: relative; /*per far funzionare position:absolute a :after */
+}
+
+#hero::after {
+    content: ''; /*il content serve, anche vuoto, per far apparire lo pseudo elemento */
+    display: block;
+    position: absolute; /*sposto SOPRA #hero */
+
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(0,0,0,0.5); */
+    /*nero semitrasparente: R G B + alpha */
+
+    background: #140000;
+background: radial-gradient(circle, rgba(20, 0, 0, 0) 0%, rgba(8, 10, 51, 0.79) 100%);
+
+}
