@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg">
+                <!-- la classe navbar-expand-lg definisce il breakpoint dal quale la navbar si espande -->
+                <!-- ho eliminato la classe bg-body-tertiary per rendere lo sfondo trasparente -->
+            <div class="container"> <!-- il container serve per stringere tutta la navbar sulla griglia -->
+               
+                <!-- Qui posso mettere ad esempio un logo -->
+                <a class="navbar-brand" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-block my-1" viewBox="0 0 118 94"><path fill="currentColor" fill-rule="evenodd" d="M24.5 0c-6.72 0-11.7 5.9-11.48 12.28.21 6.14-.07 14.1-2.07 20.58-2 6.5-5.4 10.63-10.95 11.15V50c5.55.53 8.94 4.65 10.95 11.15 2 6.48 2.28 14.44 2.07 20.58C12.79 88.1 17.78 94 24.5 94H93.5c6.73 0 11.71-5.9 11.5-12.28-.22-6.14.05-14.1 2.06-20.58 2-6.5 5.4-10.63 10.94-11.15V44c-5.55-.53-8.93-4.65-10.94-11.15-2-6.48-2.28-14.44-2.07-20.58C105.21 5.9 100.23 0 93.5 0h-69zM80 57.86C80 66.66 73.44 72 62.54 72H44a2 2 0 0 1-2-2V24a2 2 0 0 1 2-2h18.44c9.08 0 15.04 4.92 15.04 12.47 0 5.3-4 10.05-9.12 10.88v.28C75.32 46.4 80 51.21 80 57.86zM60.52 28.34H49.95v14.93h8.9c6.89 0 10.68-2.77 10.68-7.72 0-4.65-3.26-7.21-9-7.21zM49.95 49.2v16.46H60.9c7.17 0 10.96-2.88 10.96-8.28 0-5.4-3.9-8.18-11.42-8.18h-10.5z" clip-rule="evenodd"/></svg>
+                     
+                </a>
+                
+                <!-- Questo è il pulsante che collassa/espande la navbar su mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- Questa è la sua hamburger icon. Volendo possiamo sostituirla con un'icona custom scelta da noi -->
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Qua inizia la parte che si apre/chiude da mobile o desktop  -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                    <!-- per spostare il menu a destra, basta mettere ms-auto (margine sinistro) anziché me-auto-->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <!-- qui ci sono le voci del menu -->
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <!-- esempio di dropdown -->
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+<!-- 
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form> -->
+
+                </div>
+            </div>
+            </nav>
+</body>
+</html>
