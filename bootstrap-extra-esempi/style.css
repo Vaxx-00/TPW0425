@@ -15,9 +15,14 @@
 
 .overlay {
      background-color: rgba(0,0,0,0);
-     transition: background-color 0.5s ease-in-out;
+     opacity: 0;
+     transition: opacity 0.5s ease-in-out;
 }
 
 .image-container:hover .overlay {
     background-color:rgba(0,0,0,0.5); /* oppure #00000077 */
+    opacity: 1;
+    color:white;
+    font-weight: 700; /* 400=normal 700=bold e altre varianti da 100 (thin) a 900 (black) */
+    text-transform: uppercase; /*tutta maiuscola */
 }
