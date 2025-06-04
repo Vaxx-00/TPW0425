@@ -1,0 +1,23 @@
+.gallery-image {
+    filter:grayscale(100%);
+    transition: all 1.0s ease-in-out;
+    /* TRANSITION: proprietà | tempo | modalità */
+}
+
+
+.gallery-image:hover {
+    filter:grayscale(0%);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   OVERLAY                                  */
+/* -------------------------------------------------------------------------- */
+
+.overlay {
+     background-color: rgba(0,0,0,0);
+     transition: background-color 0.5s ease-in-out;
+}
+
+.image-container:hover .overlay {
+    background-color:rgba(0,0,0,0.5); /* oppure #00000077 */
+}
