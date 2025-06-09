@@ -1,0 +1,66 @@
+//IMPORTO I FILES PARZIALI SASS
+@import 'variables';
+@import 'mixins';
+
+/*NOTA: se uso delle variabili da un parziale, devo PRIMA includere il parziale */
+
+//OPERAZIONI CON I COLORI
+
+//schiarire un colore
+.title {
+    background-color: lighten($primary, 25%); /*questo restituisce il colore $primary un po' più chiaro*/
+
+    color: darken($primary,20%);
+    /*altre funzioni colore:*/
+
+}
+
+.my-text {
+
+    background-color: transparentize($primary, 0.5); /*valore da 0 a 1 dove 1 è completamente trasparente */
+    color: desaturate($primary, 50%); /*riduce la saturazione */
+
+}
+
+/* SELETTORI NIDIFICATI */
+
+.main-menu {
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        li {
+            font-weight: bold;
+
+            a {
+                text-decoration: none;
+                color:$primary;
+
+                &.active-link {
+                    text-decoration: underline;
+                }
+
+                &:hover { /*equivale a scrivere a:hover */
+                    color:darken($primary,20%);
+                }
+
+
+            }
+        }
+
+    }
+
+}
+
+
+body {
+    @include linear-gradient(#ffcc00,#ff9900); /* @include serve per inserire dei MIXIN dentro un selettore */
+    /*NOTA: posso usare anche le mie variabili come parametri nei mixin */
+}
+
+.cta-button {
+    @include myButton($primary,#ffffff,true);
+}

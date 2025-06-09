@@ -1,0 +1,42 @@
+@mixin linear-gradient($from:#000000, $to:#ffffff) { 
+    /*ho definito anche i parametri di default con $from:colore e to:$colore */
+    background: $from;
+    background: linear-gradient(90deg,$from 0%, $to 100%);
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                          ESEMPIO MIXIN PER BOTTONE                         */
+/* -------------------------------------------------------------------------- */
+
+//NOTA: per usare le variabili di _variables dobbiamo includere _variables prima di _mixins
+
+@mixin myButton($bgColor:#FFFFFF,$textColor:#000000,$outline:false) {
+
+    background-color:$bgColor;
+    color:$textColor;
+
+    padding:$spacer/2 $spacer*1.5; //variabile $spacer=1rem;
+    
+    border-radius:10px;
+    text-decoration: none;
+
+    &:hover {
+        background-color: darken($bgColor,5%);
+    }
+
+    @if $outline==true {
+
+        background-color: transparent;
+        border:1px solid $bgColor;
+
+        &:hover {
+            background-color:transparentize($bgColor,0.5);
+            color:invert($bgColor,100%);
+        }
+
+    }
+
+
+}
