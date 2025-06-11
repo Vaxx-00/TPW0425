@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- Se voglio un tema scuro, aggiungo l'attributo data-bs-theme="dark" al root
+element <html> -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>Document</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search"/>
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Lorem, ipsum dolor.</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta veniam
+                        voluptatum quod temporibus laudantium suscipit, esse sed pariatur ipsam cumque!
+                        Facilis non inventore voluptatem velit laborum perspiciatis eaque natus? Ratione
+                        modi maxime enim impedit cupiditate laboriosam voluptate consectetur assumenda
+                        iure veritatis, amet qui voluptates accusantium autem quisquam nisi magnam
+                        alias?</p>
+                    <button class="btn btn-primary">Cliccami!</button>
+                </div>
+                <div class="col-lg-4">
+                    <h2>Sidebar</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item active" aria-current="true">An active item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                    </ul>
+                </div>
+                <div class="alert alert-primary mt-5" role="alert">
+                    A simple primary alert—check it out!
+                </div>
+
+                <div class="mt-5">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <h2>Colonne con Mixins personalizzati</h2>
+
+            <div class="page-content">
+                <div class="main-content">
+                    <h2>Titolo articolo</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit hic
+                        illum necessitatibus sequi facilis, eos sapiente possimus ducimus blanditiis?
+                        Ullam ratione temporibus laudantium cupiditate debitis eius distinctio quas
+                        voluptate corrupti facere suscipit accusantium omnis animi fugiat at veniam
+                        consequatur aperiam, nobis reprehenderit odio a! Soluta est animi beatae
+                        corrupti quae laborum, autem non? Cum?</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut totam corporis
+                        debitis nemo aspernatur quibusdam eum minima, officiis vero hic deleniti et
+                        tempora esse! Deserunt similique eveniet cupiditate ipsa repudiandae sed
+                        voluptate quia, enim, vitae quidem laudantium aut tempora eius ratione cumque
+                        alias facilis ab exercitationem ipsum sapiente perferendis. Voluptatem rerum
+                        aliquid eveniet veniam expedita unde officia corporis iusto.</p>
+                </div>
+                <div class="sidebar">
+                    <strong>SIDEBAR</strong>
+                    <ul class="list-group">
+                        <li class="list-group-item">An item</li>
+                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">A third item</li>
+                        <li class="list-group-item">A fourth item</li>
+                        <li class="list-group-item">And a fifth one</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

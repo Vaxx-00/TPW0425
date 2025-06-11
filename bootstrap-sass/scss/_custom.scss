@@ -1,0 +1,36 @@
+
+.page-content {
+    @include make-row(); //Come parametro possiamo passare il gap tra le colonne. 
+
+}
+
+.main-content {
+    @include make-col-ready(); /*prepara la colonna con le caratteristiche base. Larghezza default 12/12
+
+    /*inserisco un mixin per il breakpoint. Posso farlo direttamente DENTRO il selettore*/
+    @include media-breakpoint-up(lg) {
+        @include make-col(9); /*il parametro è il numero di colonne sulla griglia*/
+    }
+}
+
+.sidebar {
+    @include make-col-ready(); 
+    @include media-breakpoint-up(lg) { 
+     @include make-col(3); }
+}
+
+/* -------------------------------------------------------------------------- */
+/*        POSSO INCLUDERE LE MEDIA QUERIES DENTRO UN SINGOLO SELETTORE        */
+/* -------------------------------------------------------------------------- */
+
+h1 {
+    color: $blue-700; //variabile colore di Bootstrap, sfumatura di blu
+
+    @include media-breakpoint-up(md) { 
+        color:$gray-600; /*variante di colore grigio */
+      }
+
+    @include media-breakpoint-up(lg) {
+        color:$indigo;
+    }
+}
